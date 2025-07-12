@@ -6,5 +6,9 @@ main{
 }
 
 @media (max-width 450px) {
-    
+     /* mobile */
+}
+
+@media (min-width: 451px) and (max-width: 1024px) {
+  /* Tablets */
 }
