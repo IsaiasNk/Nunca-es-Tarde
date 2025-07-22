@@ -225,4 +225,24 @@ body {
 }
 
 
+/*Hamburguesa*/
+
+.dropdown-menu {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ffb6c1; /* rosado claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffb6c1;
+  color: white;
+}
+
+
 
