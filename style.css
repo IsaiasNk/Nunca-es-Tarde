@@ -227,22 +227,33 @@ body {
 
 /*Hamburguesa*/
 
-.dropdown-menu {
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid #ffb6c1; /* rosado claro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-item {
-  color: #333;
-  transition: all 0.3s ease;
-}
-
-.dropdown-item:hover {
-  background-color: #ffb6c1;
-  color: rgb(251, 110, 232);
+.navbar-toggler {
+  padding: 10px 12px;
+  border: none;
+  outline: none;
 }
 
 
+.navbar-toggler-icon {
+  width: 30px;
+  height: 24px;
+  background-image: none;
+  position: relative;
+  display: inline-block;
+}
 
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ff8fa3; 
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+.navbar-toggler-icon div {
+  background-color: #ff8fa3;
+}
