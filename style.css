@@ -257,3 +257,60 @@ body {
 .navbar-toggler-icon div {
   background-color: #ff8fa3;
 }
+
+
+/* Quitar el ícono por defecto */
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+
+/* Contenedor del ícono */
+.custom-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+  position: relative;
+}
+
+/* Estilo de las líneas */
+.custom-toggler-icon .line {
+  background-color: #ff8fa3;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.line1 {
+  top: 0;
+}
+
+.line2 {
+  top: 10px;
+}
+
+.line3 {
+  top: 20px;
+}
+
+/* Cuando el menú está abierto, aplicamos cambios */
+.navbar-toggler.collapsed .line1 {
+  transform: none;
+  top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .line1 {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.navbar-toggler:not(.collapsed) .line2 {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .line3 {
+  transform: rotate(-45deg);
+  top: 10px;
+}
