@@ -225,88 +225,18 @@ body {
 }
 
 
-/*Hamburguesa*/
+/*hamburguesa*/
 
 .navbar-toggler {
-  padding: 10px 12px;
-  border: none;
-  outline: none;
+  border-color: white; 
 }
-
 
 .navbar-toggler-icon {
-  width: 30px;
-  height: 24px;
-  background-image: none;
-  position: relative;
-  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after,
-.navbar-toggler-icon div {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #ff8fa3; 
-  margin: 5px 0;
-  border-radius: 2px;
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em;
 }
 
-.navbar-toggler-icon div {
-  background-color: #ff8fa3;
-}
-
-
-/* Quitar ícono default */
-.navbar-toggler .navbar-toggler-icon {
-  display: none;
-}
-
-/* Contenedor del nuevo ícono */
-.custom-toggler-icon {
-  display: inline-block;
-  width: 30px;
-  height: 24px;
-  position: relative;
-}
-
-/* Líneas rosadas */
-.custom-toggler-icon .line {
-  background-color: #ff8fa3;
-  height: 3px;
-  width: 100%;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  transition: all 0.3s ease;
-}
-
-.line1 {
-  top: 0;
-}
-
-.line2 {
-  top: 10px;
-}
-
-.line3 {
-  top: 20px;
-}
-
-/* Animación cuando se abre el menú */
-.navbar-toggler:not(.collapsed) .line1 {
-  transform: rotate(45deg);
-  top: 10px;
-}
-
-.navbar-toggler:not(.collapsed) .line2 {
-  opacity: 0;
-}
-
-.navbar-toggler:not(.collapsed) .line3 {
-  transform: rotate(-45deg);
-  top: 10px;
-}
- 
