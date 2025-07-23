@@ -135,6 +135,29 @@ body {
   font-size: 1em;
 }
 
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario,
+  .info-negocio {
+    max-width: 90%;
+  }
+
+  .contacto h2 {
+    font-size: 2em;
+  }
+
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+    font-size: 1em;
+  }
+}
+
+
 /* Animaciones */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
