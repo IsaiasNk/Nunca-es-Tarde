@@ -53,23 +53,26 @@
  </nav>
  </header>
 <main>
-  <div class="contact-section">
-    <h2>¡Anotate!</h2>
-    <form>
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+   <section class="contacto">
+    <h2>Contacto</h2>
+    
+    <div class="contenedor-contacto">
+      <form class="formulario">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
 
-      <label for="telefono">Correo</label>
-      <input type="tel" id="telefono" class="form-control" placeholder="Tu correo">
-
-      <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="aviso">
-        <label class="form-check-label" for="aviso">Acepto recibir promociones y avisos</label>
+      <div class="info-negocio">
+        <h3>¿Dónde encontrarnos?</h3>
+        <p>📍 Dirección: Av. Siempre Viva 742</p>
+        <p>📞 Teléfono: (011) 1234-5678</p>
+        <p>⏰ Horarios: Lunes a Viernes de 9 a 18 hs</p>
+        <p>📱 Instagram: @mi_negocio</p>
       </div>
-
-      <button type="submit" class="btn btn-enviar w-100">Enviar</button>
-    </form>
-  </div>
+    </div>
+  </section>
   </main>
 
    <footer>

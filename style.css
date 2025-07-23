@@ -39,51 +39,113 @@ h1 {
 /*Contacto-html*/
 
 body {
-  background-color: white;
-  color: #555;
   font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.contact-section {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.contact-section h2 {
-  color: #d63384;
-  font-weight: bold;
-  margin-bottom: 30px;
+.contacto {
+  background: #ff69b4;
+  padding: 50px 20px;
   text-align: center;
-}
-
-.form-control {
-  border-radius: 10px;
-  border: none;
-  background-color: #e9e9e9;
-  margin-bottom: 20px;
-}
-
-.form-check-label {
-  font-size: 0.9rem;
-}
-
-.btn-enviar {
-  background: linear-gradient(to right, #ff69b4, #da70d6);
   color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 30px;
-  font-weight: bold;
-  transition: transform 0.2s ease;
 }
 
-.btn-enviar:hover {
-  transform: scale(1.05);
+.contacto h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease;
 }
+
+.contenedor-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1em;
+  resize: none;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #ffd1ea;
+  box-shadow: 0 0 10px white;
+}
+
+.formulario button {
+  background: white;
+  color: #ff69b4;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.formulario button:hover {
+  background: #ffd1ea;
+  color: #c2186a;
+}
+
+.info-negocio {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  background: white;
+  color: #ff69b4;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  animation: slideUp 1s ease;
+}
+
+.info-negocio h3 {
+  color: #c2186a;
+  margin-bottom: 10px;
+}
+
+.info-negocio p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /*actividades*/
 
