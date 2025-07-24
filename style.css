@@ -13,7 +13,7 @@ h1 {
 
 .hero-section {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/fondo gym.webp") center center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/fondo gym.webp") center center/cover no-repeat;
 }
 
 .features .icon {
