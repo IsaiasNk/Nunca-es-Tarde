@@ -1,0 +1,318 @@
+// ------------------- VARIABLES -------------------
+
+$rosa-principal: #ff69b4;
+$rosa-fuerte: #e91e63;
+$rosa-hover: #d81b60;
+$rosa-etiqueta: #d63384;
+$rosa-claro: #ffd1ea;
+
+$fondo-blanco: #fff;
+$gris-claro: #999;
+$gris-borde: #ddd;
+$fuente-principal: 'Segoe UI', sans-serif;
+$fuente-titulo: 'Dancing Script', cursive;
+
+// ------------------- IMPORTACIONES -------------------
+
+@use 'sass:color';
+
+// ------------------- ESTILOS GENERALES -------------------
+
+body {
+  font-family: $fuente-principal;
+  background: $fondo-blanco;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: $fuente-titulo;
+  text-align: center;
+  align-items: center;
+}
+
+// ------------------- HERO -------------------
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../images/fondo gym.webp') center center/cover no-repeat;
+}
+
+// ------------------- FEATURES -------------------
+
+.features {
+  .icon {
+    background-color: color.adjust($rosa-fuerte, $lightness: 15%);
+    display: inline-flex;
+    padding: 20px;
+    border-radius: 50%;
+  }
+}
+
+// ------------------- BOTONES Y TEXTOS -------------------
+
+.text-pink {
+  color: $rosa-fuerte;
+}
+
+.btn-rosa {
+  background-color: $rosa-fuerte;
+  color: white !important;
+  border: none;
+
+  &:hover {
+    background-color: $rosa-hover;
+    color: white !important;
+  }
+}
+
+// ------------------- CONTACTO -------------------
+
+.contacto {
+  background: $rosa-principal;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+  }
+}
+
+.contenedor-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  input,
+  textarea {
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: none;
+    background-color: white;
+    color: #333;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: $rosa-claro;
+      box-shadow: 0 0 10px white;
+    }
+  }
+
+  button {
+    background: white;
+    color: $rosa-principal;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      background: $rosa-claro;
+      color: $rosa-hover;
+    }
+  }
+}
+
+.info-negocio {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  background: white;
+  color: $rosa-principal;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  animation: slideUp 1s ease;
+
+  h3 {
+    color: $rosa-hover;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+}
+
+// ------------------- MEDIA QUERY -------------------
+
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario,
+  .info-negocio {
+    max-width: 90%;
+  }
+
+  .contacto h2 {
+    font-size: 2em;
+  }
+
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+    font-size: 1em;
+  }
+}
+
+// ------------------- ANIMACIONES -------------------
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// ------------------- TIENDA -------------------
+
+.tienda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid $gris-borde;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: $rosa-principal;
+  color: $rosa-etiqueta;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.nombre {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.precio {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.original {
+  text-decoration: line-through;
+  color: $gris-claro;
+  margin-right: 5px;
+}
+
+.precio-color {
+  color: $rosa-etiqueta;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #da70d6;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $rosa-principal;
+  }
+}
+
+// ------------------- ACERCA DE NOSOTROS -------------------
+
+.acerca-nosotros {
+  display: flex;
+  justify-content: center;
+  background-color: #fdfdfd;
+  padding: 50px 20px;
+  font-family: $fuente-principal;
+  color: #333;
+
+  .contenido {
+    max-width: 900px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    li {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .final {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+}
