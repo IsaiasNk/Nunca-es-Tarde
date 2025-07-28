@@ -1,4 +1,4 @@
-/*Variables*/
+/*------Variables------*/
 
 $rosa-principal: #ff69b4;
 $rosa-fuerte: #e91e63;
@@ -12,11 +12,11 @@ $gris-borde: #ddd;
 $fuente-principal: 'Segoe UI', sans-serif;
 $fuente-titulo: 'Dancing Script', cursive;
 
-/*Importaciones*/
+/*------Importaciones------*/
 
 @use 'sass:color';
 
-/*Estilos generales*/
+/*------Estilos generales------*/
 
 body {
   font-family: $fuente-principal;
@@ -31,7 +31,7 @@ h1 {
   align-items: center;
 }
 
-/*Hero*/
+/*------Hero------*/
 
 .hero-section {
   height: 100vh;
@@ -39,7 +39,7 @@ h1 {
               url('./images/fondo gym.webp') center center/cover no-repeat;
 }
 
-/*Features*/
+/*------Features------*/
 
 .features {
   .icon {
@@ -50,7 +50,7 @@ h1 {
   }
 }
 
-/*Botones y textos*/
+/*------Botones y textos------*/
 
 .text-pink {
   color: $rosa-fuerte;
@@ -67,7 +67,7 @@ h1 {
   }
 }
 
-/*Contacto*/
+/*------Contacto------*/
 
 .contacto {
   background: $rosa-principal;
@@ -158,7 +158,7 @@ h1 {
   }
 }
 
-/*Media query*/
+/*------Media query------*/
 
 @media (max-width: 768px) {
   .contenedor-contacto {
@@ -182,7 +182,7 @@ h1 {
   }
 }
 
-/*Animaciones*/
+/*------Animaciones------*/
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
@@ -194,7 +194,7 @@ h1 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/*Tienda*/ 
+/*------Tienda------*/ 
 
 .tienda {
   display: grid;
@@ -268,7 +268,7 @@ h1 {
   }
 }
 
-/*Acerca de nosotros*/
+/*------Acerca de nosotros------*/
 
 .acerca-nosotros {
   display: flex;
@@ -317,7 +317,7 @@ h1 {
   }
 }
 
-/*ACTIVIDADES*/
+/*------Actividades------*/
 
 .custom-card {
   border-radius: 10px;

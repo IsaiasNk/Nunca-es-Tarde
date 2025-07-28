@@ -1,6 +1,6 @@
-/*Variables*/
-/*Importaciones*/
-/*Estilos generales*/
+/*------Variables------*/
+/*------Importaciones------*/
+/*------Estilos generales------*/
 body {
   font-family: "Segoe UI", sans-serif;
   background: #fff;
@@ -14,13 +14,13 @@ h1 {
   align-items: center;
 }
 
-/*Hero*/
+/*------Hero------*/
 .hero-section {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/fondo gym.webp") center center/cover no-repeat;
 }
 
-/*Features*/
+/*------Features------*/
 .features .icon {
   background-color: rgb(239.8137651822, 99.6862348178, 147.3157894737);
   display: inline-flex;
@@ -28,7 +28,7 @@ h1 {
   border-radius: 50%;
 }
 
-/*Botones y textos*/
+/*------Botones y textos------*/
 .text-pink {
   color: #e91e63;
 }
@@ -43,7 +43,7 @@ h1 {
   color: white !important;
 }
 
-/*Contacto*/
+/*------Contacto------*/
 .contacto {
   background: #ff69b4;
   padding: 50px 20px;
@@ -127,7 +127,7 @@ h1 {
   font-size: 1em;
 }
 
-/*Media query*/
+/*------Media query------*/
 @media (max-width: 768px) {
   .contenedor-contacto {
     flex-direction: column;
@@ -146,7 +146,7 @@ h1 {
     font-size: 1em;
   }
 }
-/*Animaciones*/
+/*------Animaciones------*/
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -167,7 +167,7 @@ h1 {
     transform: translateY(0);
   }
 }
-/*Tienda*/
+/*------Tienda------*/
 .tienda {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -238,7 +238,7 @@ h1 {
   background-color: #ff69b4;
 }
 
-/*Acerca de nosotros*/
+/*------Acerca de nosotros------*/
 .acerca-nosotros {
   display: flex;
   justify-content: center;
@@ -279,7 +279,7 @@ h1 {
   margin-top: 30px;
 }
 
-/*ACTIVIDADES*/
+/*------Actividades------*/
 .custom-card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
